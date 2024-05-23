@@ -32,7 +32,7 @@ export default function Navbar() {
     <div id="home" className="navbar">
       <div className={scrolled ? "navbar-menu scrolled" : "navbar-menu"}>
         <div className="container">
-          <div className="navbar-logo">{logo ? (<img className="navbar-logo-image" src={scrolled ?  `${process.env.PUBLIC_URL}/${logo}.png` : `${process.env.PUBLIC_URL}/${logo}-white.png`} />) : (<span>{name}</span>)}</div>
+          <div className="navbar-logo">{logo ? (<img className="navbar-logo-image" src={scrolled ?  `${logo}.png` : `${logo}-white.png`} />) : (<span>{name}</span>)}</div>
           <label className="navbar-menu-button" htmlFor="navbar-menu-toggle"><IconMaster iconName="burger" size="21px"/></label>
           <input id="navbar-menu-toggle" type="checkbox" className="navbar-menu-toggle" />
           <ul>

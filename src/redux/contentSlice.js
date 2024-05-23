@@ -16,9 +16,9 @@ const initialState = {
     address:[{value:'https://maps.app.goo.gl/MMWmk2Avcd7o7YaPA',label:'ul. Aleja Jana Pawła II 27, 00-867 Warszawa Poland'}],
     mail:['biuro@savis.cc'],
     info:[
-      'Nip 5273058656',
-      'Rgn 525420371',
-      'Krs 0001038514',
+      'NIP 5273058656',
+      'REGON 525420371',
+      'KRS 0001038514',
     ],
     social:[
       {

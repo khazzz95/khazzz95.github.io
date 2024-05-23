@@ -1,0 +1,135 @@
+.testimonials{
+    padding: 75px 0 0 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.14);
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.testimonials-container{
+    width: 100%;
+    position: relative;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-description{
+    font-size: 21px;
+    line-height: 11px;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+
+.testimonials-header{
+    font-size: 37px;
+    line-height: 45px;
+    margin-top: 15px;
+    font-weight: 500;
+    margin-bottom: 55px;
+}
+
+.testimonials-items{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    gap: 29px;
+    padding: 29px;
+    overflow-x: auto;
+}
+
+.testimonials-container::before {
+    content: "";
+    background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(0, 0, 0, 0.8) 100%
+      ),
+      url("https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-position: 0% center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    filter: brightness(25%) contrast(100%) saturate(150%);
+  }
+
+.testimonials-item{
+    
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    gap: 11px;
+}
+
+.testimonials-item > img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonials-item:hover{
+    cursor: pointer;
+}
+
+.testimonials-item > *{
+    text-align: center;
+}
+
+.testimonials-name{
+    color: white;
+}
+
+.testimonials-message{
+    font-size: 15px;
+    color:grey;
+    width: 85%;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-overflow: clip;
+overflow: hidden;
+}
+
+
+@media only screen and (min-width:768px){
+
+    .testimonials-items{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        gap: 29px;
+        padding: 29px;
+        overflow: auto;
+    }
+
+    .testimonials-item{
+        flex: 1 1 calc(33% - 29px);
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        gap: 11px;
+    }
+}
+

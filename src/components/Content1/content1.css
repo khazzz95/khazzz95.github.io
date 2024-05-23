@@ -1,0 +1,52 @@
+.content1{
+    padding: 55px 0 55px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.14);
+}
+
+.content1 .container{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content1-description{
+    font-size: 15px;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.content1-header{
+    font-size: 37px;
+    line-height: 45px;
+    margin-top: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.content1-items{
+    display: flex;
+    justify-content: center;
+    margin: 55px 0 25px 0;
+    gap: 29px;
+    flex-wrap: wrap;
+    
+}
+
+.content1-item{
+    flex: 1 1 calc(33% - 29px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.content1-p{
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 1.6em;
+}

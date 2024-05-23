@@ -1,0 +1,262 @@
+.navbar {
+  min-height: 100vh;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s;
+}
+
+.navbar::before {
+  content: "";
+  background-image: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("https://images.pexels.com/photos/4344878/pexels-photo-4344878.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-position: 0% center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  filter: brightness(25%) contrast(100%) saturate(150%);
+}
+
+.navbar-menu {
+  z-index: 999;
+  position: relative;
+  
+}
+
+.navbar-menu .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  height: 71px;
+  transition: all 0.5s;
+  top: 0;
+}
+
+.navbar-menu .navbar-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 19px;
+  letter-spacing: 0.001em;
+}
+
+.navbar-menu ul {
+  display: none;
+}
+
+.navbar-menu-toggle:checked + ul {
+  display: block;
+  position: absolute;
+  top: 100%;
+  background-color: white;
+  list-style: none;
+  color: black;
+  padding: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar-menu-toggle:checked + ul li {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.61);
+  width: 100%;
+  text-align: center;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-menu-toggle:checked + ul .nav-link {
+  color: rgb(59, 57, 57);
+}
+
+.navbar-menu .nav-link {
+  color: white;
+  font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+  text-decoration: none;
+  
+}
+
+.navbar-menu-button {
+  display: block;
+}
+
+.navbar-menu-toggle {
+  display: none;
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.918);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.188);
+}
+
+.scrolled .navbar-logo {
+  color: rgb(59, 57, 57);;
+  font-weight: 300;
+}
+
+.scrolled .nav-link {
+  color:  rgb(59, 57, 57);;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+
+.navbar-content .container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.navbar-content h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.7em;
+  padding: 5px;
+  font-weight: 700;
+}
+
+.navbar-content p {
+  color: rgb(186, 178, 178);
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.navbar-content .nav-link {
+  font-size: 1.1em;
+  margin-top: 11px;
+  font-weight: 400;
+  color: black;
+  background-color: white;
+  padding: 7px 21px;
+  text-decoration: none;
+  margin-top: 15px;
+}
+
+.navbar-logo-image{
+  max-width: 100%;
+  width: 150px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .navbar-menu .nav-link {
+    font-size: 15px;
+  }
+
+  .navbar-menu .navbar-logo {
+    font-size: 23px;
+  }
+
+}
+
+@media only screen and (min-width: 1280px) {
+  .navbar-menu .nav-link {
+    font-size: 14px;
+  }
+
+  .navbar-menu .navbar-logo {
+    font-size: 22px;
+  }
+
+  .navbar-content p {
+    font-size: 1.2em;
+  }
+
+  .navbar-content h3 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-menu .nav-link {
+    font-size: 13px;
+  }
+
+  .navbar-menu .navbar-logo {
+    font-size: 22px;
+  }
+
+  .navbar-content p {
+    width: 85%;
+    font-size: 1.3em;
+  }
+
+  .navbar-content h3 {
+    font-size: 3em;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  .navbar-menu-button {
+    display: none;
+  }
+  .navbar-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .navbar-menu .nav-link {
+    
+    color: white;
+    text-decoration: none;
+    
+  }
+
+  .scrolled {
+    background-color: rgba(255, 255, 255, 0.918);
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  .scrolled .navbar-logo {
+    color: black;
+    font-weight: 300;
+  }
+  
+  .scrolled .nav-link {
+    color: black;
+  }
+
+  .scrolled .icon{
+    color: black;
+    stroke:black;
+  }
+
+  
+
+  .navbar-content p {
+    width: 95%;
+  }
+
+  .navbar-content h3 {
+    font-weight: 600;
+  }
+}

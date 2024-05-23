@@ -1,0 +1,88 @@
+.showcase{
+    padding: 55px 0 55px 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.14);
+}
+
+.showcase .container{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.showcase-description{
+    font-size: 21px;
+    line-height: 11px;
+    font-weight: 500;
+    color: grey;
+    margin-bottom: 5px;
+}
+
+
+.showcase-header{
+    font-size: 37px;
+    line-height: 45px;
+    margin-top: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.showcase-items{
+    display: flex;
+    justify-content: center;
+    margin: 55px 0 25px 0;
+    gap: 29px;
+    flex-wrap: wrap;
+    
+}
+
+.showcase-item{
+    flex: 1 1 1;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.showcase-item > *{
+    text-align: center;
+}
+
+.showcase-item .icon{
+    
+}
+
+.showcase-item > h3{
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 500;
+}
+
+.showcase-item > p{
+    color: rgb(94, 93, 93);
+    font-weight: 300;
+    width: 71%;
+}
+
+@media only screen and (min-width:426px) {
+
+    .showcase-items{
+        display: flex;
+        justify-content: center;
+        margin: 55px 0 25px 0;
+        gap: 29px;
+        flex-wrap: wrap;
+    }
+
+    .showcase-item{
+        flex: 1 1 calc(24% - 29px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,38 @@
+.language-selector{
+    position: relative;
+    
+}
+
+.language-selector-selected{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+.language-selector-items{
+    background-color: rgba(255, 255, 255, 0.918);
+    color: black;
+    position: absolute;
+    top: 2.8em;
+    right: 0;
+}
+
+.language-selector-item{
+    display: flex;
+    align-items: center;
+    padding: 9px 15px;
+    cursor: pointer;
+}
+
+.language-selector-item .fi{
+    margin-right: 15px;
+
+}
+
+.hidden{
+    display: none;
+}
+

@@ -1,0 +1,36 @@
+.socials{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.14);
+    background-color: rgb(242, 242, 242);
+}
+
+.socials .container{
+    
+}
+
+.socials-items{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 45px;
+    padding: 29px;
+}
+
+
+.socials-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-item:hover{
+    cursor: pointer;
+}
+
+.socials-count{
+    font-size: 41px;
+    color:black;
+    font-weight: 400;
+    
+}
